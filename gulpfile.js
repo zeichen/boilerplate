@@ -191,7 +191,7 @@ gulp.task('watch', ['html', 'fonts', 'buildBundle'], function() {
     // Watch .html files
     gulp.watch('app/*.html', ['html',reload]);
 
-    gulp.watch(['app/styles/**/*.scss', 'app/styles/**/*.css'], ['styles', 'scripts', reload]);
+    gulp.watch(['app/styles/**/*.scss', 'app/styles/**/*.css'], ['buildBundle', reload]);
     gulp.watch('app/scripts/**/*.js', ['scripts', reload]);
 
     

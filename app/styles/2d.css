@@ -1,0 +1,7 @@
+#monster { position: absolute; width: 200px; height: 262px; background: url("../images/monster-shadow.png"); }
+
+#matterWorld { position: absolute; z-index: 10; }
+
+#svg { position: absolute; }
+
+/*# sourceMappingURL=2d.css.map */

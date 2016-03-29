@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ,GACP,QAAQ,EAAE,QAAQ,EAClB,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,KAAK,EACb,UAAU,EAAE,mCAAmC;;AAGhD,YAAY,GACX,QAAQ,EAAE,QAAQ,EACnB,OAAO,EAAE,EAAE;;AAGX,IAAI,GACH,QAAQ,EAAE,QAAQ",
+"sources": ["2d.scss"],
+"names": [],
+"file": "2d.css"
+}

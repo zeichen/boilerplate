@@ -4,14 +4,15 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+     <base href="/#index/" >
         <meta charset="utf-8">
-        <title>react gulp browserify</title>
+        <title>The Joey's Playground</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="styles/main.css">
-        
+        <script type="text/javascript" src="http://localhost:1337/vorlon.js"></script>
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -20,34 +21,144 @@
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]--> AAAA
-         <div id="app">
+        <![endif]--> 
 
-         </div>
-               
+<div class="content" id ="one">
+ <button class="md-trigger" data-modal="modal-1">Fade in &amp; Scale</button>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+ <svg id="svg">
+         <g  sketch:type="MSArtboardGroup" stroke="#979797" fill="#D8D8D8">
+            <path d="M22.5545323,33.9347758 C26.0433123,33.9347758 29.322587,44.8332257 30.6616046,42.3591856 C37.891959,28.9999995 27.186516,9.35831587 27.186516,9.35831587 C27.186516,9.35831587 20.6678899,19.4488339 15.5961033,28.2740698 C12.3667855,33.8932911 9.72403789,38.9995483 9.72403789,40.6614947 C9.72403789,47.565054 15.6509729,33.9347758 22.5545323,33.9347758 Z" id="Oval-1" sketch:type="MSShapeGroup"></path>
+        </g>
+ 
+</svg>
+
         
+</div>
+<div class="content" id="two">
+
+    
+ 
+
+</div>
+<div class="content" id="tree">
+  
+
+</div>
+<div class="content" id="four">
+  <div id="matterWorld"></div>
+  <div id="monster"></div>
+</div>
+<div class="content" id="five">
+  
+        <div id="so">SOCKET.IO  手機敲磚塊  <a href="javascript:void(0)" id="newGame">開始</a>
+ </div>
+<img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=http%3A%2F%2Fsockmebrick.herokuapp.com&amp;qzone=1&amp;margin=0&amp;size=80x80&amp;ecc=L" alt="qr code" />
+       
+    
+       <div class="grid">
+           
+            
+            <ul>
+               
+              
+            </ul>
+       
+        <div id="gameZone">
+            <canvas id="backgroundCanvas">
+                Your browser doesn't support HTML5. Please install Internet Explorer 9 :
+                <br />
+                <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie9_bow_Bing&WT.srch=1&mtag=SearBing">
+                    http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie9_bow_Bing&WT.srch=1&mtag=SearBing</a>
+            </canvas>
+            <svg id="svgRoot">
+                <circle cx="100" cy="100" r="10" id="ball" />
+                <rect id="pad"/>
+            </svg>
+            <div id="stats">
+            </div>
+            <div id="message">Victory!</div>
+        </div>
+        
+    </div>
+
+</div>
+   
+<div class="md-modal md-effect-12" id="modal-1">
+            <div class="md-content">
+                <h3>Modal Dialog</h3>
+                <div class="md-scrollzone">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                 
+                </div>
+                   <button class="md-close">Close me!</button>
+            </div>
+        </div>
+        <div class="md-overlay"></div><!-- the overlay element -->       
+
+        <script>
+            // this is important for IEs
+            var polyfilter_scriptpath = 'lib/';
+        </script>
+        <!-- build:js scripts/vendor.js -->
+       
+    
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+         <script src="../bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="../bower_components/socket.io.client/dist/socket.io-1.3.5.js"></script>
         <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+        <script src="../bower_components/rsvp.js/rsvp.min.js"></script>
+        <script src="../bower_components/Snap.svg/dist/snap.svg-min.js"></script>
+        <script src="../bower_components/Matter/build/matter.min.js"></script>
+        <script type="text/javascript" src="../bower_components/gsap/src/minified/TweenMax.min.js"></script>
+        <script type="text/javascript" src="../bower_components/pixi.js/bin/pixi.min.js"></script>
+        <script type="text/javascript" src="../vendor/js/TabWindowVisibilityManager.js"></script>
         
         <!-- endbower -->
         <!-- endbuild -->
-        <script type="text/javascript" src="http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=130059073834066"></script>
+
+  <!-- build:js scripts/csspolyfill.js -->
+
+
+        <!-- bower:js -->
+         <script type="text/javascript" src="../bower_components/classie/classie.js"></script>
+         <script type="text/javascript" src="../bower_components/CSS-Filters-Polyfill/lib/cssParser.js"></script>
+        <script type="text/javascript" src="../bower_components/CSS-Filters-Polyfill/lib/css-filters-polyfill.js"></script>
+
+        <!-- endbower -->
+        <!-- endbuild -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.1.8/svg-morpheus.js"></script>
+    <!--    
+    <script type="text/javascript" src="http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=130059073834066"></script>
+       -->
         <script src="scripts/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-             
- 
+         var s = Snap("#svg");
 
-
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+         
+        
         </script>
     </body>
 </html>
