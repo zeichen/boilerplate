@@ -177,10 +177,7 @@ gulp.task('watch', ['html', 'fonts', 'buildBundle'], function() {
     browserSync({
         notify: true,
         logPrefix: 'BS',
-        // Run as an https by uncommenting 'https: true'
-        // Note: this uses an unsigned certificate which on first access
-        //       will present a certificate warning in the browser.
-        // https: true,
+       
         server: ['dist', 'app']
     });
 

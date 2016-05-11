@@ -18,6 +18,7 @@ var MouseConstraint = Matter.MouseConstraint;
 var Common = Matter.Common;
 var _mouseDown=false;
 var RenderPixi=Matter.RenderPixi
+var Render=Matter.Render
 
 
 //
@@ -36,7 +37,7 @@ graphics.endFill();;
 var engine = Engine.create({
     render: {
         element: document.getElementById('matterWorld')
-       ,controller: RenderPixi
+       ,controller: Render
     }
 });
 
@@ -78,7 +79,7 @@ var boxB = Bodies.rectangle(450, 50, 80, 80);
            // Composites.softBody(250, 400, 4, 4, 0, 0, true, 15, particleOptions)
         ]);
 
-var texture = PIXI.Texture.fromImage('images/monster.png');
+//var texture = PIXI.Texture.fromImage('images/monster.png');
 
 
 var monster = function(){
@@ -104,6 +105,13 @@ var monsters = function(){
                     }
                 });
 };
+
+
+
+
+
+
+
 
 $('#matterWorld').on('click', function () {
     //World.add(engine.world, monsters());
@@ -197,7 +205,7 @@ World.add(engine.world, [monster,boxA]);
  var renderOptions = engine.render.options;
         renderOptions.showAngleIndicator = false;
         renderOptions.wireframes = false;
-//engine.render.options.background = 'transparent';
+engine.render.options.background = 'transparent';
 //Matter.RenderPixi.setBackground(engine.render, 'transparent');
 
 

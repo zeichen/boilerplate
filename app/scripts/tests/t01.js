@@ -19,4 +19,4 @@ dog.dispatcher.on('something2', function (data) {console.log(data) });
 dog.dispatcher.emit('something2',1234333);
 
 
-var liquidMatter = require('../components/liquid-matter');
+//var liquidMatter = require('../components/liquid-matter');
